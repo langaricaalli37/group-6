@@ -7,7 +7,7 @@
 **Pitch:** [One compelling sentence]
 
 ![Class Diagram](class-diagram.png)
-![UI Mockup](mockup.png)
+![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/startingscreen.JPG)
 
 ## Core Classes
 | Class | Role |
