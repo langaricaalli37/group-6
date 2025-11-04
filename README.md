@@ -9,7 +9,7 @@
 ![Class Diagram](class-diagram.png)
 ![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/startingscreen.JPG)
 
-[UML]()
+[UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
 ## Group
 - Name (@github)
 - Name (@github)
