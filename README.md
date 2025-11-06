@@ -11,5 +11,8 @@
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
 ## Group
+- Alli Langarica (@langaricaalli37)
+- Name (@github)
+- Name (@github)
 - Name (@github)
 - Name (@github)
