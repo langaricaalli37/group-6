@@ -13,6 +13,6 @@
 ## Group
 - Alli Langarica (@langaricaalli37)
 - Kayla Langarica (@KaylaRL3114)
-- Sadikshya Kuikel (@sadikshya2011)
+- Sadikshya Kuikel (@sadikshya2011) UI mockup designer
 - Name (@github)
 - Name (@github)
