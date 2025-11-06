@@ -13,6 +13,6 @@
 ## Group
 - Alli Langarica (@langaricaalli37)
 - Kayla Langarica (@KaylaRL3114)
-- Name (@github)
+- Sadikshya Kuikel (@sadikshya2011)
 - Name (@github)
 - Name (@github)
