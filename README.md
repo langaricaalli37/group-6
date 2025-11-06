@@ -14,5 +14,5 @@
 - Alli Langarica (@langaricaalli37) readmen and links checker (group leader)
 - Kayla Langarica (@KaylaRL3114) UML 
 - Sadikshya Kuikel (@sadikshya2011) UI mockup designer
-- maya hadlock (@Mayahadlock)
-- Name (@github)
+- maya hadlock (@Mayahadlock) group title desginer 
+- Name (@github) timeline desginer
