@@ -1,6 +1,6 @@
 # group-6
 
-# [project title]
+# [Garden Pacman]
 
 **Classification:** [Your Choice]
 
