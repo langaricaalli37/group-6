@@ -1,43 +1,42 @@
-//Kayla Langarica | 3B 
-class Pac3 {
-  float x, y;        
-  int r;             // Radius
-  float mouth = 0.5; // Mouth angle
-  float mouthSpeed = 0.05;
-  int dirX = 1, dirY = 0; // Direction
+// kayla langarica |       | Pacman
+class Pacman {
+  float x, y;        // position
+  float size;        // diameter
+  float speed;       // movement speed
+  color c;           // color
+  float mouthAngle;  // mouth opening angle
+  boolean mouthOpening; // track mouth animation state
 
-  // Constructor
-  Pac3(float x, float y, int r) {
-    this.x = x;
-    this.y = y;
-    this.r = r;
+  Pacman(float x_, float y_, float size_) {
+    x = x_;
+    y = y_;
+    size = size_;
+    speed = 3;
+    c = color(255, 105, 180); // pink!
+    mouthAngle = PI / 6;
+    mouthOpening = true;
   }
 
-  // Display method
+  void update() {
+    // move right across the screen
+    x += speed;
+    if (x > width + size/2) {
+      x = -size/2; // wrap around
+    }
+
+    // animate mouth opening and closing
+    if (mouthOpening) {
+      mouthAngle += 0.02;
+      if (mouthAngle > PI / 3) mouthOpening = false;
+    } else {
+      mouthAngle -= 0.02;
+      if (mouthAngle < PI / 10) mouthOpening = true;
+    }
+  }
+
   void display() {
-    mouth += mouthSpeed;
-    if (mouth > 0.8 || mouth < 0.2) mouthSpeed *= -1;
-
-    pushMatrix();
-    translate(x, y);
-    if (dirX == -1) rotate(PI);
-    else if (dirY == -1) rotate(PI + HALF_PI);
-    else if (dirY == 1) rotate(HALF_PI);
-    fill(#FFD1F4);
+    fill(c);
     noStroke();
-    arc(0, 0, r, r, mouth, TWO_PI - mouth);
-    popMatrix();
-  }
-
-  // Move method
-  void move() {
-    x += dirX * 2;
-    y += dirY * 2;
-
-    // Wrap around screen
-    if (x > width + r) x = -r;
-    if (x < -r) x = width + r;
-    if (y > height + r) y = -r;
-    if (y < -r) y = height + r;
+    arc(x, y, size, size, mouthAngle, TWO_PI - mouthAngle, PIE);
   }
 }
