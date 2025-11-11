@@ -1,5 +1,5 @@
 //Kayla Langarica | 3B 
-class Pac {
+class Pac3 {
   float x, y;        
   int r;             // Radius
   float mouth = 0.5; // Mouth angle
@@ -7,7 +7,7 @@ class Pac {
   int dirX = 1, dirY = 0; // Direction
 
   // Constructor
-  Pac(float x, float y, int r) {
+  Pac3(float x, float y, int r) {
     this.x = x;
     this.y = y;
     this.r = r;
