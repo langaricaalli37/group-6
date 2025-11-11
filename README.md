@@ -15,4 +15,4 @@
 - Kayla Langarica (@KaylaRL3114) UML 
 - Sadikshya Kuikel (@sadikshya2011) UI mockup designer
 - maya hadlock (@Mayahadlock) group title desginer 
-- Name (@github) timeline desginer
+- Camilla Codell (@github) timeline desginer
