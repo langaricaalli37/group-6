@@ -1,5 +1,5 @@
 class Pac {
-  float x, y;        // Position
+  float x, y;        
   int r;             // Radius
   float mouth = 0.5; // Mouth angle
   float mouthSpeed = 0.05;
