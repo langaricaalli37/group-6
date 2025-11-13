@@ -5,8 +5,9 @@
 **Map:** I saw you guys editing the whole code again, and I fixed the map code, put this under void setup:
   size(500, 500);
   gameMap = new Map();
-} and this under void draw:
-gameMap.display(); if you guys did it, delete this, but if you didn't have time I'll do it myself after you guys finish
+ and this under void draw:
+gameMap.display(); 
+if you guys did it, delete this, but if you didn't have time I'll do it myself after you guys finish
 
 **Classification:** [Your Choice]
 
