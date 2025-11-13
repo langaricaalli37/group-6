@@ -1,4 +1,4 @@
-# group-6
+# group-6 *NOTE FOR YOU GUYS ABOUT THE MAP*
 
 # [Garden Pacman]
 
