@@ -2,6 +2,12 @@
 
 # [Garden Pacman]
 
+**Map:** [I saw you guys editing the whole code again, and I fixed the map code, put this under void setup
+void setup() {
+  size(500, 500);
+  gameMap = new Map();
+} and this under void draw 
+gameMap.display();] 
 **Classification:** [Your Choice]
 
 **Pitch:** [One compelling sentence]
