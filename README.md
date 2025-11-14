@@ -1,4 +1,4 @@
-# 5 petals
+# group 6 ** NOTE that for the berries and flowers code, you should not have "void draw" or "void setup" because that is in the main tab not the classes.**
 
 # [Garden Pacman]
 
