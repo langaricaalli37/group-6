@@ -1,4 +1,4 @@
-# 6 petals
+# 5 petals
 
 # [Garden Pacman]
 
