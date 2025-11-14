@@ -1,3 +1,5 @@
+//Sadikshya Kuikel | Map Class |
+
 class Map {
   int x, y, w, h;
   color wallColor = color(38, 150, 38);
