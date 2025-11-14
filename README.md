@@ -1,4 +1,4 @@
-# group-6 * *
+# group 6 petals
 
 # [Garden Pacman]
 
