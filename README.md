@@ -11,7 +11,7 @@
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
 ## Group
-- Alli Langarica (@langaricaalli37) readmen and links checker (group leader)
+- Alli Langarica (@langaricaalli37) read me and links checker (group leader)
 - Kayla Langarica (@KaylaRL3114) UML 
 - Sadikshya Kuikel (@sadikshya2011) UI mockup designer
 - maya hadlock (@Mayahadlock) group title desginer 
