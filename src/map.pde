@@ -89,5 +89,7 @@ class Map {
     vertex(300, 490);
     bezierVertex(350, 495, 400, 485, 450, 490);
     noStroke();
+
+   // Starting screen in images
   }
 }
