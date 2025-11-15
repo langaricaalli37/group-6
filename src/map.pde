@@ -39,5 +39,55 @@ class Map {
     rect(60, 400, 100, 20);
     rect(340, 400, 100, 20);
     rect(200, 440, 100, 20);
+
+    // Small flowers
+    fill(#FF69B4);
+    ellipse(100, 60, 10, 10);
+    ellipse(200, 150, 10, 10);
+    ellipse(400, 350, 10, 10);
+    ellipse(120, 400, 10, 10);
+    fill(#FFFF00);
+    ellipse(100, 60, 5, 5);
+    ellipse(200, 150, 5, 5);
+    ellipse(400, 350, 5, 5);
+    ellipse(120, 400, 5, 5);
+
+    // Stones
+    fill(#CFCFCF);
+    ellipse(50, 460, 8, 5);
+    ellipse(70, 460, 8, 5);
+    ellipse(430, 40, 8, 5);
+    ellipse(450, 40, 8, 5);
+
+    // Mushrooms
+    fill(#D13A3A);
+    ellipse(160, 420, 12, 10);
+    fill(#FFF1C1);
+    rect(158, 420, 4, 8);
+    fill(#D13A3A);
+    ellipse(440, 60, 12, 10);
+    fill(#FFF1C1);
+    rect(438, 60, 4, 8);
+
+    // Vines
+    stroke(#1F7A1F);
+    strokeWeight(2);
+    noFill();
+    beginShape();
+    vertex(10, 50);
+    bezierVertex(5, 100, 15, 150, 10, 200);
+    endShape();
+    beginShape();
+    vertex(490, 100);
+    bezierVertex(495, 150, 485, 200, 490, 250);
+    endShape();
+    beginShape();
+    vertex(50, 10);
+    bezierVertex(100, 5, 150, 15, 200, 10);
+    endShape();
+    beginShape();
+    vertex(300, 490);
+    bezierVertex(350, 495, 400, 485, 450, 490);
+    noStroke();
   }
 }
