@@ -6,7 +6,7 @@
 
 **Pitch:** [One compelling sentence]
 
-![Class Diagram](class-diagram.png)
+![Class Diagram](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
 ![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/startingscreen.JPG)
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
@@ -16,3 +16,10 @@
 - Sadikshya Kuikel (@sadikshya2011) UI mockup designer
 - maya hadlock (@Mayahadlock) group title desginer 
 - Camilla Codell (@github) timeline desginer
+
+## TO DO LIST:
+- classes do not include the coding tha is only in the main tab
+- logo for the game
+- start and gameover screens
+- updating UML / class diagramn
+- getting the code to work
