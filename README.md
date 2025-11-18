@@ -24,3 +24,8 @@
 - start and gameover screens
 - updating UML / class diagramn
 - getting the code to work
+
+## EDITORS NOTE:
+- I made a new folder called data folder for a picture and font, make sure when your checking the code not to mix data up with the source codes
+- I also finished the starting screen and updated the source code. I noticed that you were editing the code again so I'm just letting you know
+- I edited: char, PImage, PFont, void setup, void draw, void mousePressed, the Button class, I added void drawStart, and I added mousePressed
