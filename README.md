@@ -6,7 +6,7 @@
 
 **Pitch:** [One compelling sentence]
 
-![Class Diagram](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
+![Class Diagram]()
 ![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/startingscreen.JPG)
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
