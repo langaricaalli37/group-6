@@ -10,7 +10,7 @@
 
 ![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/starting%20screen.PNG?raw=true)
 
-[UML](https://github.com/langaricaalli37/group-6/blob/main/images/GardenPacMan.jpg)
+[UML](https://github.com/langaricaalli37/group-6/blob/main/images/updatedUml.jpg)
 ## Group
 - Alli Langarica (@langaricaalli37) read me and links checker (group leader)
 - Kayla Langarica (@KaylaRL3114) UML 
