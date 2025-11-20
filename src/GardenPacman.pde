@@ -19,6 +19,11 @@ for (PVector p : gameMap.generateBerrySpots()) {
 }
 
   score = 0;
+
+img = loadImage("gardenpacman.png");
+  myFont = createFont("STHeitiSC-Medium", 48);
+
+ btnStart = new Button("PLAY GAME", 180, 230, 160, 50);
 }
 
 void draw() {
@@ -27,6 +32,16 @@ void draw() {
   gameMap.display();
   pac.move();
   pac.display();
+
+background(230);
+  switch(screen) {
+  case 's':
+    drawStart();
+    break;
+  case 'p':
+    drawPlay();
+    break;
+  }
   
 
 
@@ -52,4 +67,21 @@ void keyPressed() {
   if (keyCode == DOWN)  pac.setDirection(0, 4);
   if (keyCode == LEFT)  pac.setDirection(-4, 0);
   if (keyCode == RIGHT) pac.setDirection(4, 0);
+}
+
+void mousePressed() {
+  switch(screen) {
+  case 's':
+    if (btnStart.clicked()) {
+      screen = 'p';
+      break;
+    }
+  }
+}
+
+void drawStart() {
+  background(255);
+  image(img, 0, 0);
+  btnStart.display();
+  //btnPause.display();
 }
