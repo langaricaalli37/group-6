@@ -1,6 +1,6 @@
 # group 6 
 
-# [Garden Pacman]
+# Garden Pacman
 
 **Classification:** This game is a nature-themed maze-chase adventure inspired by classic Pac-Man mechanics. Players navigate a vibrant garden, collecting berries and avoiding roaming creatures to survive and score points.
 
