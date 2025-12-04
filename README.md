@@ -19,10 +19,8 @@
 - Camilla Codell (@github) timeline desginer
 
 ## TO DO LIST:
-- classes do not include the coding tha is only in the main tab
-- logo for the game
+- classes do not include the coding that is only presented in main tab
 - start and gameover screens
-- updating UML / class diagramn
 - getting the code to work
 
 ## EDITORS NOTE:
