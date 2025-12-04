@@ -6,7 +6,7 @@
 
 **Pitch:** Guide a hungry garden-Pac through a lush maze of flowers and vines, dodging critters while harvesting magical berries to keep the garden alive.
 
-![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/starting%20screen.PNG?raw=true)
+![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/StartingScreen.png?raw=true)
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/updatedUml.jpg)
 ## Group
