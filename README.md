@@ -6,8 +6,6 @@
 
 **Pitch:** [One compelling sentence]
 
-![Class Diagram]()
-
 ![UI Mockup](https://github.com/langaricaalli37/group-6/blob/main/images/starting%20screen.PNG?raw=true)
 
 [UML](https://github.com/langaricaalli37/group-6/blob/main/images/updatedUml.jpg)
