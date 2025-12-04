@@ -58,7 +58,7 @@ void draw() {
 
     fill(0);
     textSize(20);
-    text("Score: " + score, 10, 30);
+    text("Score: " + score, 60, 9);
     break;
   }
 }
