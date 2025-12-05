@@ -1,5 +1,6 @@
 /// allison langarica | nov 13 2025 | GardenPacman
 
+ArrayList<Bug> bugs;
 ArrayList<Berries> berries;
 PacMan pac;
 int score;
@@ -15,8 +16,19 @@ void setup() {
   pac = new PacMan(width/2, height/2);
 
   berries = new ArrayList<Berries>();
-
   berries = new ArrayList<Berries>();
+  bugs = new ArrayList<Bug>();
+
+  // example: spawn 3 bugs far away from PacMan
+  for (int i = 0; i < 3; i++) {
+    float bx, by;
+    do {
+      bx = random(width);
+      by = random(height);
+    } while (dist(bx, by, pac.x, pac.y) < 120);
+
+    bugs.add(new Bug(bx, by));
+  }
 
   for (PVector p : gameMap.generateBerrySpots()) {
     berries.add(new Berries(p.x, p.y));
@@ -35,15 +47,34 @@ void draw() {
   switch(screen) {
 
   case 's':
-    drawStart();    
+    drawStart();
+    break;
+
+  case 'g':
+    background(0);
+    fill(255, 0, 0);
+    textSize(40);
+    text("GAME OVER", 120, 230);
     break;
 
   case 'p':
     background(#65C665);
 
+
     gameMap.display();
     pac.move();
     pac.display();
+
+    for (Bug bug : bugs) {
+      bug.move(pac);
+      bug.display();
+
+      if (bug.hits(pac)) {
+        screen = 'g';  // game over
+      }
+    }
+
+
 
     for (int i = 0; i < berries.size(); i++) {
       Berries b = berries.get(i);
