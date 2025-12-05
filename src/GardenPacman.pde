@@ -37,11 +37,12 @@ void setup() {
   score = 0;
 
   img = loadImage("gardenpacman.png");
+  
   imgGameOver= loadImage("deadpac.png");
   myFont = createFont("STHeitiSC-Medium", 48);
 
   btnStart = new Button("PLAY GAME", 180, 230, 160, 50);
-  btnOver= new Button ("Game Over",220,150,160,50);
+  btnOver= new Button ("Game Over",100,300,320,100);
 }
 
 void draw() {
@@ -125,8 +126,8 @@ void drawStart() {
 void drawPlay() {
 }
 void drawGameOver() {
-  background(0);
-  text("GAME OVER SCREEN (fill this in)", 200, 200);
+  background(255);
+ 
   image(imgGameOver,0,0);
   btnOver.display();
 }
