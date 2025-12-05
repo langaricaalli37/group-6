@@ -6,8 +6,8 @@ PacMan pac;
 int score;
 Map gameMap;
 char screen = 's';   // s = start, m = menu, t = settings, p = play, u = pause, g = game over, a = app stats
-Button btnStart, btnMenu, btnSettings, btnBack, btnPause;
-PImage img;
+Button btnStart, btnMenu, btnSettings, btnBack, btnPause, btnOver;
+PImage img ,imgGameOver;
 PFont myFont;
 
 void setup() {
@@ -37,9 +37,11 @@ void setup() {
   score = 0;
 
   img = loadImage("gardenpacman.png");
+  imgGameOver= loadImage("deadpac.png");
   myFont = createFont("STHeitiSC-Medium", 48);
 
   btnStart = new Button("PLAY GAME", 180, 230, 160, 50);
+  btnOver= new Button ("Game Over",220,150,160,50);
 }
 
 void draw() {
@@ -51,10 +53,7 @@ void draw() {
     break;
 
   case 'g':
-    background(0);
-    fill(255, 0, 0);
-    textSize(40);
-    text("GAME OVER", 120, 230);
+    drawGameOver();
     break;
 
   case 'p':
@@ -108,6 +107,11 @@ void mousePressed() {
       screen = 'p';
       break;
     }
+      case 'g':  // Game Over screen button
+      if(btnOver.clicked()){
+        screen = 's';
+      }
+      break;
   }
 }
 
@@ -119,4 +123,10 @@ void drawStart() {
 }
 
 void drawPlay() {
+}
+void drawGameOver() {
+  background(0);
+  text("GAME OVER SCREEN (fill this in)", 200, 200);
+  image(imgGameOver,0,0);
+  btnOver.display();
 }
