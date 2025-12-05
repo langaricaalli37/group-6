@@ -1,4 +1,3 @@
-
 // Kayla Langarica | PacMan | nov 2025
 class PacMan {
   float x, y;
@@ -21,9 +20,21 @@ class PacMan {
   }
 
   void move () {
-    if (pacmanDead) return ;
-    x += xSpeed;
-    y += ySpeed;
+     if (pacmanDead) return;
+
+    // Try new intended positions
+    float newX = x + xSpeed;
+    float newY = y + ySpeed;
+
+    // Check horizontal movement
+    if (!gameMap.isInsideWall(newX, y)) {
+      x = newX;
+    }
+
+    // Check vertical movement
+    if (!gameMap.isInsideWall(x, newY)) {
+      y = newY;
+    }
     x = constrain(x, w/2, width - w/2 );
     y = constrain(y, h/2, height - h/2);
   }
