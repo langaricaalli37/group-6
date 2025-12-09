@@ -12,7 +12,7 @@
 ## Group
 - Alli Langarica (@langaricaalli37) read me and links checker (group leader)
 - Kayla Langarica (@KaylaRL3114) UML 
-- Sadikshya Kuikel (@sadikshya2011) UI mockup designer
+- Sadikshya Kuikel (@sadikshya2011) UI mockup and Artwork Designer
 - maya hadlock (@Mayahadlock) group title desginer 
 - Camilla Codell (@github) timeline desginer
 
