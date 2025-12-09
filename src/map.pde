@@ -1,4 +1,4 @@
-//Sadikshya Kuikel and Maya Hadlock| Map Class |
+//Maya Hadlock and Sadikshya Kuikel| Map Class |
 
 class Map {
   int x, y, w, h;
