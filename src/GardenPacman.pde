@@ -16,10 +16,8 @@ void setup() {
   pac = new PacMan(width/2, height/2);
 
   berries = new ArrayList<Berries>();
-  berries = new ArrayList<Berries>();
   bugs = new ArrayList<Bug>();
 
-  // example: spawn 3 bugs far away from PacMan
   for (int i = 0; i < 3; i++) {
     float bx, by;
     do {
@@ -37,12 +35,11 @@ void setup() {
   score = 0;
 
   img = loadImage("gardenpacman.png");
-  
-  imgGameOver= loadImage("deadpac.png");
+  imgGameOver = loadImage("deadpac.png");
   myFont = createFont("STHeitiSC-Medium", 48);
 
   btnStart = new Button("PLAY GAME", 180, 230, 160, 50);
-  btnOver= new Button ("Game Over",100,300,320,100);
+  btnOver = new Button("Game Over", 100, 300, 320, 100);
 }
 
 void draw() {
@@ -60,7 +57,6 @@ void draw() {
   case 'p':
     background(#65C665);
 
-
     gameMap.display();
     pac.move();
     pac.display();
@@ -70,11 +66,9 @@ void draw() {
       bug.display();
 
       if (bug.hits(pac)) {
-        screen = 'g';  // game over
+        screen = 'g';
       }
     }
-
-
 
     for (int i = 0; i < berries.size(); i++) {
       Berries b = berries.get(i);
@@ -95,24 +89,28 @@ void draw() {
 }
 
 void keyPressed() {
-  if (keyCode == UP)    pac.setDirection(0, -4);
-  if (keyCode == DOWN)  pac.setDirection(0, 4);
-  if (keyCode == LEFT)  pac.setDirection(-4, 0);
+  if (keyCode == UP) pac.setDirection(0, -4);
+  if (keyCode == DOWN) pac.setDirection(0, 4);
+  if (keyCode == LEFT) pac.setDirection(-4, 0);
   if (keyCode == RIGHT) pac.setDirection(4, 0);
 }
 
 void mousePressed() {
   switch(screen) {
+
   case 's':
     if (btnStart.clicked()) {
+      resetGame();
       screen = 'p';
-      break;
     }
-      case 'g':  // Game Over screen button
-      if(btnOver.clicked()){
-        screen = 's';
-      }
-      break;
+    break;
+
+  case 'g':
+    if (btnOver.clicked()) {
+      resetGame();
+      screen = 'p';
+    }
+    break;
   }
 }
 
@@ -120,14 +118,35 @@ void drawStart() {
   background(255);
   image(img, 0, 0);
   btnStart.display();
-  //btnPause.display();
 }
 
 void drawPlay() {
 }
+
 void drawGameOver() {
   background(255);
- 
-  image(imgGameOver,0,0);
+  image(imgGameOver, 0, 0);
   btnOver.display();
+}
+
+void resetGame() {
+
+  pac = new PacMan(width/2, height/2);
+  score = 0;
+
+  berries = new ArrayList<Berries>();
+  for (PVector p : gameMap.generateBerrySpots()) {
+    berries.add(new Berries(p.x, p.y));
+  }
+
+  bugs = new ArrayList<Bug>();
+  for (int i = 0; i < 3; i++) {
+    float bx, by;
+    do {
+      bx = random(width);
+      by = random(height);
+    } while (dist(bx, by, pac.x, pac.y) < 120);
+
+    bugs.add(new Bug(bx, by));
+  }
 }
